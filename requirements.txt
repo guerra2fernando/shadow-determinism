@@ -1,0 +1,21 @@
+# requirements.txt
+numpy
+scipy
+matplotlib
+tqdm
+nolds
+openai
+scikit-learn
+pywavelets
+pyunicorn
+pyRQA
+python-dotenv
+pyinform
+pandas
+tables
+pyDOE2
+umap-learn
+seaborn
+google-generativeai
+tabulate
+Pillow
