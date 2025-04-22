@@ -188,65 +188,6 @@ Furthermore, the project explores the potential for controlling the quantum syst
         *   `observables_data/`: Contains `.npy` files for saved observables (if enabled).
         *   `orchestrator_state/`: Contains the orchestrator state file (if orchestration used).
 
-## Code Structure
-
-
-├── init.py
-├── main.py # Main execution script, runs suites/orchestration
-├── config.py # Central configuration settings
-├── .env # (Optional) For API keys - GITIGNORE THIS
-├── experiment_manager.py # Functions to define/generate experiment configs
-├── results_handler.py # Saving/loading simulation results DataFrame
-├── llm_interface.py # Interface for OpenAI/Gemini API calls
-├── agents.py # AI agents for planning, analysis, reporting (Orchestration)
-├── orchestrator.py # Manages the AI-driven research cycle
-├── reporting.py # Helper functions for generating AI report prompts
-│
-├── core/ # Core physics simulation components
-│ ├── init.py
-│ ├── schrodinger.py # Split-Operator TDSE solver
-│ └── operators.py # Kinetic and potential operators
-│
-├── potentials/ # Potential function definitions
-│ ├── init.py
-│ └── dynamic_potential.py # Defines V(x,t) including driving
-│
-├── chaos/ # Chaotic signal generation
-│ ├── init.py
-│ ├── lorenz.py # Lorenz attractor simulation
-│ ├── rossler.py # Rossler attractor simulation
-│ ├── logistic_map.py # Logistic map sequence generation
-│ └── # (Add other chaos models here)
-│
-├── classical_mechanics/ # Classical simulation components
-│ ├── init.py
-│ ├── simulation.py # Main classical simulation function (solve_ivp)
-│ ├── models.py # Defines ODEs for classical models (oscillators, torus, hyperchaos)
-│ └── analysis.py # Analysis functions for classical trajectories (LLE, CorrDim)
-│
-├── observables/ # Calculation of physical observables
-│ ├── init.py
-│ └── analysis.py # Functions for <x>, <p>, <H>, entropy, etc.
-│
-├── validation/ # Analysis metrics and validation tools
-│ ├── init.py
-│ ├── metrics.py # LLE, FFT, RQA, CWT, CorrDim implementations
-│ └── information_flow.py # Transfer Entropy, Mutual Information (using pyinform)
-│
-├── visualization/ # Plotting functions
-│ ├── init.py
-│ └── plot_wavefunction.py # Functions for heatmaps, animations, observables, comparison plots
-│
-└── analysis/ # Higher-level meta-analysis scripts 
-├── init.py
-├── common_analysis_utils.py # Shared helpers (loading data, config reconstruction)
-├── gating_analysis.py # Specific analysis for gating experiments
-└── embedding_analysis.py # Specific analysis for embedding experiments
-
-Other potential top-level files:
-requirements.txt
-README.md
-.gitignore
 
 ## Contributing
 
