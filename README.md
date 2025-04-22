@@ -1,6 +1,6 @@
-# Shadow Determinism - A Quantum Chaos Simulation Suite
+# 👁️‍🗨️ Shadow Determinism - A Quantum Chaos Simulation Suite 
 
-## Overview
+## 🔬 Overview
 
 This project simulates a one-dimensional (1D) quantum particle subjected to various time-dependent potentials, including those modulated by classical chaotic systems (Lorenz, Rössler, Logistic Map), periodic signals, noise, and scheduled parameter changes. The primary goal is to investigate the emergence and characteristics of complexity and chaotic behavior in the quantum system under different driving conditions.
 
@@ -8,7 +8,7 @@ The simulation employs the accurate and stable **Split-Operator Fast Fourier Tra
 
 Furthermore, the project explores the potential for controlling the quantum system and encoding information through parameter modulation (gating and embedding experiments). It also features an optional parallel simulation of a classical high-dimensional system (e.g., 4D coupled oscillators) to study quantum-classical correspondence. An experimental AI Orchestration layer allows for automated experiment planning and analysis using Large Language Models (LLMs).
 
-## Features
+## 👓 Features
 
 *   **Quantum Simulation Core:**
     *   Solves the 1D TDSE using the Split-Operator FFT method.
@@ -80,7 +80,7 @@ Furthermore, the project explores the potential for controlling the quantum syst
 1.  **Clone the repository:**
     ```bash
     git clone <your-repository-url>
-    cd quantum_chaos_sim
+    cd shadow-determinism
     ```
 
 2.  **Create a virtual environment (recommended):**
@@ -153,7 +153,7 @@ Furthermore, the project explores the potential for controlling the quantum syst
 2.  **Run the Simulation Suite:**
     *   Execute the main script from the parent directory (the one containing the `shadow_determinism` folder):
         ```bash
-        python -m shadow_determinism.main
+        python -m shadow-determinism.main
         ```
     *   This will:
         *   Generate experiment configurations based on settings in `config.py` and `experiment_manager.py`.
@@ -170,7 +170,7 @@ Furthermore, the project explores the potential for controlling the quantum syst
     *   Configure LLM providers and API keys (`cfg.llm_choice`, `cfg.openai_api_key`, `cfg.gemini_api_key`).
     *   Run the main script as above:
         ```bash
-        python -m shadow_determinism.main
+        python -m shadow-determinism.main
         ```
     *   The orchestrator will run multiple iterations:
         *   **Plan:** LLM suggests experiments.
